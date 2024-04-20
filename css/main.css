@@ -123,19 +123,16 @@ header nav ul li a {
 
 .section-one {
 	width: 100%;
-	/* width: 29%; */
 }
 
 .section-two {
 	width: 100%;
-	/* width: 42%; */
 	border-top: 5px solid #EEE;
 	border-bottom: 5px solid #EEE;
 }
 
 .section-three {
 	width: 100%;
-	/* width: 29%; */
 }
 
 .bottom-section h3 {
@@ -158,7 +155,6 @@ header nav ul li a {
 footer {
 	display: flex;
 	justify-content: center;
-	text-align: center;
 	margin-top: 8px;
 }
 
@@ -167,4 +163,62 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: 0.875rem;
+}
+
+/******** TABLET MEDIA QUERY ********/
+@media all and (min-width: 768px) {
+	
+	/******** BOTTOM SECTION ********/
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+
+	.section-one {
+		width: 26%;
+	}
+	
+	.section-two {
+		width: 40%;
+		border-right: 5px solid #EEE;
+		border-left: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+		padding: 0 30px;
+	}
+	
+	.section-three {
+		width: 26%;
+	}
+}
+
+/******** DESKTOP MEDIA QUERY ********/
+@media all and (min-width: 1200px) {
+
+	/******** GLOBAL STYLES ********/
+	body {
+		font-size: 1em;
+	}
+
+	header .content-wrapper { 
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+	
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		width: 21%;
+	}
+	
+	header nav ul {
+		display: flex;
+		justify-content: space-between;		
+	}
+
 }
